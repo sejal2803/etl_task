@@ -16,4 +16,8 @@ class UnitTest < ActiveSupport::TestCase
   test '#name' do
     assert_equal 'Studio Unit', @unit.name
   end
+
+  test '#description' do
+    assert_match /MRT station/, @unit.description
+  end
 end

@@ -24,4 +24,8 @@ class UnitTest < ActiveSupport::TestCase
   test '#area' do
     assert_equal 37, @unit.area
   end
+
+  test '#uom' do
+    assert_equal 'sqm', @unit.uom
+  end
 end

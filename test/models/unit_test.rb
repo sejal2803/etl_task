@@ -20,4 +20,8 @@ class UnitTest < ActiveSupport::TestCase
   test '#description' do
     assert_match /MRT station/, @unit.description
   end
+
+  test '#area' do
+    assert_equal 37, @unit.area
+  end
 end

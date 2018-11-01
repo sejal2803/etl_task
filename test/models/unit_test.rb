@@ -2,7 +2,7 @@ require 'test_helper'
 
 class UnitTest < ActiveSupport::TestCase
   setup do
-    @unit = units(:example)
+    @unit = units(:studio)
   end
 
   test '#valid?' do
@@ -11,5 +11,9 @@ class UnitTest < ActiveSupport::TestCase
 
   test '#price' do
     assert_equal 149.99, @unit.price
+  end
+
+  test '#name' do
+    assert_equal 'Studio Unit', @unit.name
   end
 end

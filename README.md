@@ -1,24 +1,8 @@
-# README
+ETL Starter Application
+=======================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails application with just enough code to start AELOGICA's [ETL exercise](https://git.appexpress.io/open-source/etl-exercise).
 
-Things you may want to cover:
+### Prerequisites
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- at least Ruby 2.3.1

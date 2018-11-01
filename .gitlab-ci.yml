@@ -1,0 +1,10 @@
+image: appexpress/ci:2.3.7
+
+stages:
+  - test
+
+test:
+  script:
+    - rails_test
+  tags:
+    - kubernetes

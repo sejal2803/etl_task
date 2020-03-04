@@ -1,0 +1,36 @@
+<div class="card text-center">
+  <div class="card-header">
+    ETL Data
+  </div>
+  <div class="card-body">
+    <% if @units.blank? %>
+      <div>
+        <h3> Units not fetched and stored yet!!!!</h3>
+      </div>
+    <% else %>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Area</th>
+            <th scope="col">UOM</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @units.each do |unit| %>
+            <tr>
+              <td><%= unit.name %></td>
+              <td><%= unit.description %></td>
+              <td><%= unit.price %></td>
+              <td><%= unit.area %></td>
+              <td><%= unit.uom %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+</div>
